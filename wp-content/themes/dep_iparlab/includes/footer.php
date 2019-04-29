@@ -1,3 +1,4 @@
+</div>
 <footer class="container-fluid block-foot" id="pie">
 <div class="row block">
   <div class="col-md-2">
@@ -10,9 +11,9 @@
   </div>
   <div class="col-md-4">
     <h3>siguenos en redes sociales</h3>
-    <img src="http://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Logo-Instagram.png" alt="" width="70px" height="auto">
-    <img src="http://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Logo-Facebook.png" alt=""width="70px" height="auto">
-    <p>@IparlabOficial</p>
+    <img class="col-md-3" src="http://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Logo-Instagram.png" alt="" width="70px" height="auto">
+    <img class="col-md-3" src="http://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Logo-Facebook.png" alt=""width="70px" height="auto">
+    <p class="col-md-3">@IparlabOficial</p>
   </div>
   <div class="col-md-2">
     
