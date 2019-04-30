@@ -18,7 +18,7 @@
 </div>
 <![endif]-->
 
-<nav class="navbar navbar-default navbar-static-top">
+<!-- <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -39,10 +39,44 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-    </div><!-- /.navbar-collapse -->
+    </div>
 
-  </div><!-- /.container -->
-</nav>
+  </div>
+</nav> -->
+
+
+<header>
+  <div class="panel-container">
+      <div id="nav-icon" class="">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <nav>
+            <div class="item-yellow">Menú</div>
+            <?php
+            wp_nav_menu( array(
+                'theme_location'    => 'navbar-left',
+                'depth'             => 2,
+                'menu_class'        => '',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?>         
+      </nav>
+      <div class="logo">
+        <a href="<?php echo home_url('/'); ?>">
+          <img src="https://depura-creatividad.com/iparlab/wp-content/uploads/2019/02/logo-iparlab-e1550680594358.png" alt="">
+        </a>
+      </div>
+      <ul class="lateral_menu">
+          <li class=""><a href="javascript:void(0);">Tutoriales </a></li>
+          <li class=""><a href="javascript:void(0);">Entrevistas</a></li>
+          <li class=""><a href="javascript:void(0);">Destacados</a></li>
+        </ul>
+  </div>
+</header>
 
 <!--
 Site Title
@@ -55,7 +89,7 @@ See also the accompanying CSS example in css/bst.css .
   <div class="row">
     <div class="col-sm-12">
       <h1 id="site-title">
-      	<a class="text-muted" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+      	<a class="text-muted" href="<?php //echo home_url('/'); ?>" title="<?php //echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php //bloginfo('name'); ?></a>
       </h1>
     </div>
   </div>

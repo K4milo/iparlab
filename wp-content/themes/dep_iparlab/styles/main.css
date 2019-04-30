@@ -1,3 +1,4 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 @font-face {
   font-family: 'Roboto-Bold';
   src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
@@ -98,7 +99,13 @@ body {
   outline: none;
 }
 
+body.home .container-fluid,
+body.page-template-templates_nosotros-tpl-php .container-fluid {
+  padding: 0 !important;
+}
+
 .container-fluid {
+  padding-top: 100px !important;
   background: #1C1C1C;
   padding-bottom: 30px !important;
 }
@@ -113,6 +120,326 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+
+body.opened-menu {
+  overflow: hidden;
+}
+
+body.opened-menu header nav {
+  display: block;
+}
+
+header {
+  height: 70px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 91%;
+  -o-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 101;
+}
+
+header .logo {
+  height: 100px;
+  padding: 5px 0;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    width: 100px;
+  }
+}
+
+header .logo a {
+  height: 100%;
+  text-decoration: none;
+  color: transparent;
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+header .logo a img {
+  display: table;
+  height: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  header .logo a img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header .logo a img {
+    max-width: 225px;
+  }
+}
+
+header #nav-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  top: -webkit-calc(50% - 16px/2);
+  top: -moz-calc(50% - 16px/2);
+  top: calc(50% - 16px/2);
+  left: 0;
+  z-index: 102;
+}
+
+header #nav-icon.active span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+header #nav-icon.active span:nth-child(2) {
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+header #nav-icon.active span:nth-child(3) {
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+header #nav-icon.active span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+header #nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  opacity: 1;
+  left: 0;
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -o-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header #nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+header #nav-icon span:nth-child(2) {
+  top: 10px;
+}
+
+header #nav-icon span:nth-child(3) {
+  top: 10px;
+}
+
+header #nav-icon span:nth-child(4) {
+  top: 20px;
+}
+
+header .item-yellow {
+  display: block;
+  font-size: 35px;
+  font-family: 'Raleway-Bold';
+  padding: 0 0 7px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #F8931F;
+}
+
+header nav {
+  position: absolute;
+  display: none;
+  background: #000000cf;
+  color: #fff;
+  overflow: hidden;
+  left: -webkit-calc(0px - 5%);
+  left: -moz-calc(0px - 5%);
+  left: calc(0px - 5%);
+  padding: 7% 10% 2% 10%;
+  top: -webkit-calc(0px - 25px);
+  top: -moz-calc(0px - 25px);
+  top: calc(0px - 25px);
+}
+
+@media screen and (max-width: 767px) {
+  header nav {
+    width: 90%;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 30% 10% 2% 10%;
+  }
+}
+
+header nav ul {
+  display: block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  height: 100%;
+  list-style-type: none;
+  margin: 0 5px;
+  display: block;
+  width: 220px;
+}
+
+@media screen and (max-width: 767px) {
+  header nav ul li {
+    width: 100%;
+  }
+}
+
+header nav ul li.active a {
+  color: #F8931F;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  height: 100%;
+  font-size: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff;
+  display: table;
+}
+
+@media screen and (max-width: 767px) {
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+  color: #F8931F;
+}
+
+header ul.lateral_menu {
+  position: absolute;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 20px;
+  width: 45%;
+  text-align: right;
+}
+
+@media screen and (max-width: 1240px) {
+  header ul.lateral_menu {
+    top: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header ul.lateral_menu {
+    display: none;
+  }
+}
+
+header ul.lateral_menu li {
+  height: 100%;
+  list-style-type: none;
+  margin: 0px;
+  display: inline-block;
+  width: auto;
+}
+
+header ul.lateral_menu li.active a {
+  color: #F8931F;
+}
+
+header ul.lateral_menu li a {
+  padding: 10px 10px;
+  height: 100%;
+  font-size: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff;
+  display: table;
+  font-family: 'Raleway-Bold';
+}
+
+@media screen and (max-width: 1240px) {
+  header ul.lateral_menu li a {
+    font-size: 20px;
+  }
+}
+
+header ul.lateral_menu li a:hover {
+  text-decoration: none;
+  color: #F8931F;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  background: #fff;
+  padding: 5px;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+  display: block;
+  font-size: 16px;
+  font-family: 'Raleway-Bold';
+  padding: 0 0 7px;
+  color: #000;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #F8931F;
+}
+
+.woocommerce ul.products li.product .button {
+  font-size: 20px;
+  height: 45px;
+  margin-top: 0px;
+}
+
+.woocommerce ul.products li.product .price {
+  font-size: 20px;
+  color: #000;
+  display: block;
+  text-align: center;
+}
+
+#content header {
+  position: relative;
+  z-index: 0;
 }
 
 .nopadding {
@@ -324,6 +651,10 @@ section.row {
 
 /*HOME*/
 
+.block-foot {
+  padding-bottom: 0px !important;
+}
+
 .block-foot .block {
   padding: 15px 0;
   margin-bottom: -45px;
@@ -499,6 +830,96 @@ section.row {
 }
 
 /*NOSOTROS*/
+
+.section-titulo-interna {
+  left: 50px;
+  text-align: left;
+  padding: 0 0%;
+}
+
+.section-titulo-interna.right {
+  text-align: right;
+}
+
+.section-titulo-interna h2,
+.section-titulo-interna h3 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: 'Raleway-Bold';
+  padding: 0 0 7px;
+  border-bottom: 5px solid #F8931F;
+}
+
+.section-titulo-interna h3 {
+  font-size: 20px;
+  margin-top: 0;
+  border-bottom: 0px;
+  font-family: 'Raleway-Medium';
+}
+
+.row-start {
+  /* Half-star*/
+}
+
+.row-start .rate {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.row-start input {
+  display: none;
+}
+
+.row-start label {
+  float: right;
+  font-size: 0;
+  color: #d9d9d9;
+  margin: 0 5px;
+}
+
+.row-start label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 30px;
+}
+
+.row-start label:hover,
+.row-start label:hover ~ label {
+  color: #F8931F;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.row-start input:checked ~ label {
+  color: #ccac00;
+  cursor: pointer;
+}
+
+.row-start input:checked ~ label:hover,
+.row-start input:checked ~ label:hover ~ label {
+  color: #F8931F;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.row-start .star-half {
+  position: relative;
+}
+
+.row-start .star-half:before {
+  position: absolute;
+  content: "\f089";
+  padding-right: 0;
+}
 @font-face {
   font-family: 'Roboto-Bold';
   src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");

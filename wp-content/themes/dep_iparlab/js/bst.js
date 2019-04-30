@@ -15,5 +15,10 @@
 		// You can put your own code in here
 
 	});
+	$('#nav-icon').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(document.body).toggleClass('opened-menu');
+    });
 
 }(jQuery));
