@@ -23,7 +23,10 @@ $videos = get_field('videos');
 
       ?>
       <div class="block-gratis-item col-lg-3 col-md-6 col-xs-12">
-        <a href="<?php echo get_site_url(); ?>/aula-gratis"><img src="<?php echo $imagen; ?>" alt=""></a>
+        <a href="<?php echo get_site_url(); ?>/aula-gratis">
+          <div class="hover-video"></div>
+          <img src="<?php echo $imagen; ?>" alt="">
+        </a>
         <h3><?php echo $titulo; ?></h3>
       </div>
       <?php

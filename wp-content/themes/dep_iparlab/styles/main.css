@@ -101,7 +101,7 @@ body {
 
 body.home .container-fluid,
 body.page-template-templates_nosotros-tpl-php .container-fluid {
-  padding: 0 !important;
+  padding-top: 0 !important;
 }
 
 .container-fluid {
@@ -407,7 +407,8 @@ header ul.lateral_menu li a:hover {
 }
 
 .woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product {
+.woocommerce-page ul.products li.product,
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper {
   background: #fff;
   padding: 5px;
 }
@@ -428,6 +429,24 @@ header ul.lateral_menu li a:hover {
   font-size: 20px;
   height: 45px;
   margin-top: 0px;
+  text-align: center;
+  line-height: 45px;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .woocommerce ul.products li.product .button {
+    font-size: 12px;
+  }
+}
+
+.woocommerce-MyAccount-navigation li a {
+  color: #fff;
+}
+
+.woocommerce-MyAccount-navigation li a:hover,
+.woocommerce-MyAccount-content p a {
+  color: #F8931F;
 }
 
 .woocommerce ul.products li.product .price {
@@ -440,6 +459,41 @@ header ul.lateral_menu li a:hover {
 #content header {
   position: relative;
   z-index: 0;
+}
+
+#content section {
+  margin-top: 80px;
+  padding: 0;
+}
+
+#content article p,
+#content article h4 {
+  display: none;
+}
+
+.woocommerce .quantity .qty {
+  color: #000;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce #content div.product .woocommerce-tabs,
+.woocommerce div.product .woocommerce-tabs,
+.woocommerce-page #content div.product .woocommerce-tabs,
+.woocommerce-page div.product .woocommerce-tabs {
+  font-size: 20px;
+  color: #fff;
+}
+
+.woocommerce #content div.product .woocommerce-tabs,
+.woocommerce div.product .woocommerce-tabs,
+.woocommerce-page #content div.product .woocommerce-tabs,
+.woocommerce-page div.product .woocommerce-tabs {
+  color: #000;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+  padding: 5px;
 }
 
 .nopadding {
@@ -583,12 +637,39 @@ section.row {
   line-height: 95px;
 }
 
+.section_col_4 .block-gratis .block-gratis-item a,
+.video-free .block-gratis .block-gratis-item a {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
 .section_col_4 .block-gratis .block-gratis-item a img,
 .video-free .block-gratis .block-gratis-item a img {
   width: 100%;
   -webkit-box-shadow: 0px 5px 10px #131313;
      -moz-box-shadow: 0px 5px 10px #131313;
           box-shadow: 0px 5px 10px #131313;
+}
+
+.section_col_4 .block-gratis .block-gratis-item a .hover-video,
+.video-free .block-gratis .block-gratis-item a .hover-video {
+  display: none;
+  z-index: 1;
+  background: #000000a6 url("../images/play.png") no-repeat center center;
+  -webkit-background-size: 60px 60px;
+     -moz-background-size: 60px;
+       -o-background-size: 60px;
+          background-size: 60px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.section_col_4 .block-gratis .block-gratis-item a:hover .hover-video,
+.video-free .block-gratis .block-gratis-item a:hover .hover-video {
+  display: block;
 }
 
 .section_col_4 .block-gratis .block-gratis-item h3,
@@ -666,6 +747,33 @@ section.row {
   width: 100%;
   margin: 0 0 0 5%;
   max-width: 340px;
+}
+
+.redes-principales img {
+  width: 70px;
+}
+
+.redes-principales p {
+  font-size: 25px;
+  font-family: 'Raleway-Bold';
+}
+
+.redes-comunicacion {
+  padding-bottom: 20px;
+  background: #F8931F;
+  margin-top: 70px;
+  padding: 0 5%;
+}
+
+.redes-comunicacion img {
+  width: 100px;
+}
+
+.redes-comunicacion .whatsapp-web,
+.redes-comunicacion .messenger-web {
+  float: right;
+  margin-top: -50px;
+  margin: -50px 10px 0;
 }
 
 /*PLANES*/
