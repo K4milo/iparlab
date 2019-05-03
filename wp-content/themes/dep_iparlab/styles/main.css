@@ -453,6 +453,7 @@ header ul.lateral_menu li a:hover {
 @media screen and (max-width: 767px) {
   .woocommerce ul.products li.product .button {
     font-size: 12px;
+    zoom: 0.7;
   }
 }
 
@@ -551,6 +552,12 @@ a.vermas {
   z-index: 1;
   text-align: center;
   line-height: 55px;
+}
+
+@media screen and (max-width: 767px) {
+  a.vermas {
+    zoom: 0.7;
+  }
 }
 
 .row.center_special {
@@ -990,6 +997,13 @@ section.row {
   border-bottom: 3px solid #F8931F;
 }
 
+@media screen and (max-width: 767px) {
+  .woocommerce-page .col2-set .col-1 h2,
+  .woocommerce-page .col2-set .col-2 h2 {
+    font-size: 35px;
+  }
+}
+
 .woocommerce form.login,
 .woocommerce form.register {
   float: none;
@@ -1028,11 +1042,32 @@ section.row {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .woocommerce #respond input#submit,
+  .woocommerce a.button,
+  .woocommerce button.button,
+  .woocommerce input.button,
+  .woocommerce #respond input#submit.alt,
+  .woocommerce a.button.alt,
+  .woocommerce button.button.alt,
+  .woocommerce input.button.alt {
+    zoom: 0.7;
+  }
+}
+
 .woocommerce ul.products li.product a {
   width: 100%;
   text-align: center;
   color: #000;
   font-size: 20px;
+}
+
+.woocommerce form.register .woocommerce-privacy-policy-text p {
+  color: #fff;
+}
+
+.woocommerce form.register .woocommerce-privacy-policy-text p a {
+  color: #F8931F;
 }
 
 .woocommerce-privacy-policy-text p,

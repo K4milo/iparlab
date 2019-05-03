@@ -337,6 +337,7 @@ header
     @include mobileGrand
 	{
 		font-size: 12px;
+		zoom: 0.7;
 	}
 }
 .woocommerce-MyAccount-navigation li a
@@ -434,6 +435,10 @@ a.vermas
 	z-index: 1;
 	text-align: center;
 	line-height: 55px;
+	@include mobileGrand
+	{
+		zoom: 0.7;
+	}
 }
 .row
 {
@@ -838,6 +843,10 @@ section
 	font-size: 42px;
 	font-family: 'Raleway-Bold';
 	border-bottom: 3px solid #F8931F;
+	@include mobileGrand
+	{
+		font-size: 35px;
+	}
 
 
 }
@@ -871,6 +880,10 @@ section
 	margin: 30px auto 0;
 	z-index: 1;
 	text-decoration: none;
+	@include mobileGrand
+	{
+		zoom: 0.7;
+	}
 }
 .woocommerce ul.products li.product a
 {
@@ -878,6 +891,14 @@ section
     text-align: center;
     color: #000;
     font-size: 20px;
+}
+.woocommerce form.register .woocommerce-privacy-policy-text p
+{
+	color: #fff;
+}
+.woocommerce form.register .woocommerce-privacy-policy-text p a
+{
+	color: #F8931F;
 }
 .woocommerce-privacy-policy-text p,
 .wc_payment_method.payment_method_paypal label,
