@@ -37,7 +37,3 @@ $videos_gratis= get_field('videos_gratis');
 
 
 
-
-
-
-

@@ -11,40 +11,99 @@
           <h3>nuestros <br> servicios</h3>
         </div>
         <div class="bloque-gris0">
-          <h4>academia de trading</h4>
+          <h4>Contenido Diario</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>consultas via email</h4>
+          <h4>Tutoriales</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>consultas whatsapp</h4>
+          <h4>Actualizaciones</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>llamadas telefonicas</h4>
+          <h4>Cursos Gratis de Otros Talleres</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>seguimiento individual virtual</h4>
+          <h4>Academias de Tading</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>seguimiento individual presencial</h4>
+          <h4>Consultas (Email, Whatsapp y Llamadas)</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>talleres, seminarios y eventos presenciales</h4>
+          <h4>Análisis vivo Diario</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>seguimientos grupales y analisis de mercado</h4>
+          <h4>Análisis vivo Semanal</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>trading en vivo</h4>
+          <h4>Retroalimentación Semanal</h4>
         </div>
         <div class="bloque-gris0">
-          <h4>investment advisor</h4>
+          <h4>Mentorias Grupales</h4>
+        </div>
+		          <div class="bloque-gris0">
+          <h4>Seguimiento Grupal</h4>
+        </div>
+		          <div class="bloque-gris0">
+          <h4>Seguimiento Individual Virtual</h4>
+        </div>
+		          <div class="bloque-gris0">
+          <h4>Seguimiento Individual Presencial</h4>
+        </div>
+		  		          <div class="bloque-gris0">
+          <h4>Investment Advisor</h4>
+        </div>
+		  		          <div class="bloque-gris0">
+          <h4>Talleres y Entrenamientos Presenciales</h4>
         </div>
       </div>
       <div class="planes-catalogo col-lg-3 col-md-3 col-xs-12">
         <div class="bloque-naranja">
           <h3>
-            ambassador <br>
+            FREE <br>
+            <span>GRATIS</span>
+          </h3>
+        </div>
+        <div class="bloque-gris">
+          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+        <div class="bloque-gris">
+         <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+        <div class="bloque-gris">
+			<img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+        <div class="bloque-gris">
+          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+        <div class="bloque-gris">
+        </div>
+        <div class="bloque-gris">
+        </div>
+        <div class="bloque-gris">
+        </div>
+        <div class="bloque-gris">
+        </div>
+        <div class="bloque-gris">
+        </div>
+        <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+					  <h4>5% Descuento</h4>
+        </div>
+        <button type="button" role="link" onclick="window.location='https://www.iparlab.com/shop/'" name="button">empieza</button>
+      </div>
+      <div class="planes-catalogo col-lg-3 col-md-3 col-xs-12">
+        <div class="bloque-naranja">
+          <h3>
+            mastering <br>
             <span>$125</span>
           </h3>
         </div>
@@ -52,88 +111,58 @@
           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <h4>1 mensual</h4>
+         <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-			<img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
-        </div>
-        <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
-        </div>
-        <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
-        </div>
-        <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
-        </div>
-        <div class="bloque-gris">
-          <h4>10% DTO</h4>
-        </div>
-        <div class="bloque-gris">
-          <h4>solo analisis</h4>
-        </div>
-        <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
-        </div>
-        <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
-        </div>
-        <button type="button" name="button">empieza</button>
-      </div>
-      <div class="planes-catalogo col-lg-3 col-md-3 col-xs-12">
-        <div class="bloque-naranja">
-          <h3>
-            master <br>
-            <span>$125</span>
-          </h3>
+         <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <h4>2 mensual</h4>
-        </div>
-        <div class="bloque-gris">
-          <h4>24</h4>
+          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
+          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
-        </div>
+<img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">        </div>
         <div class="bloque-gris">
-          <h4>30% DTO</h4>
-        </div>
+<img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">        </div>
         <div class="bloque-gris">
-           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+          <h4>1 Mes</h4>
         </div>
-        <div class="bloque-gris">
-           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+		          <div class="bloque-gris">
         </div>
-        <div class="bloque-gris">
-          <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-X.png" alt="" width="50px" height="auto">
+		          <div class="bloque-gris">
         </div>
-        <button type="button" name="button">empieza</button>
+		          <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+        </div>
+		          <div class="bloque-gris">
+					  <h4>25% Descuento</h4>
+        </div>
+        <button type="button" role="link" onclick="window.location='https://www.iparlab.com/shop/'" name="button">empieza</button>
       </div>
       <div class="planes-catalogo col-lg-3 col-md-3 col-xs-12">
         <div class="bloque-naranja">
           <h3>
             celebrity <br>
-            <span>$125</span>
+            <span>$710</span>
           </h3>
         </div>
         <div class="bloque-gris">
            <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <h4>8 mensual</h4>
+           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <h4>ilimitado</h4>
+           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
            <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
@@ -145,9 +174,6 @@
           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
-          <h4>75% DTO</h4>
-        </div>
-        <div class="bloque-gris">
            <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
         <div class="bloque-gris">
@@ -156,7 +182,24 @@
         <div class="bloque-gris">
            <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
         </div>
-        <button type="button" name="button">empieza</button>
+        <div class="bloque-gris">
+ <h4>1 Semanal</h4>        </div>
+		          <div class="bloque-gris">
+           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+		          <div class="bloque-gris">
+           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+		          <div class="bloque-gris">
+           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+		          <div class="bloque-gris">
+           <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/Planes-Chulo.png" alt="" width="50px" height="auto">
+        </div>
+		          <div class="bloque-gris">
+         <h4>50% Descuento</h4>
+        </div>
+        <button type="button" role="link" onclick="window.location='https://www.iparlab.com/shop/'" name="button">empieza</button>
       </div>
     </div>
   </div>

@@ -41,8 +41,9 @@ $query = new WP_Query($args);
   ?>
 
   <article class="videos-block">
-    <?php
-    echo do_shortcode('[vdo id="' . $id_video . '"]'); ?>
+    <?php the_post_thumbnail();?><!-- poner filtro de play como estan en el home-->
+    <!--<?php
+     echo do_shortcode('[vdo id="' . $id_video . '"]'); ?>  Este es el codigo para traer el video de vdochiper-->
       <h2><a href="<?php the_permalink() ?>"><?php the_title();?></a></h2>
   </article>
 

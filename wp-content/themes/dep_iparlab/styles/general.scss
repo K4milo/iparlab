@@ -18,7 +18,9 @@ body {
 	outline: none;
 }
 body.home,
-body.page-template-templates_nosotros-tpl-php
+body.page-template-templates_nosotros-tpl-php,
+body.page-template-_videos-gratis-tpl,
+body.page-template-_videos-tpl
 {
 	.container-fluid
 	{
@@ -68,6 +70,10 @@ header
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 101;
+    @include mobileGrand
+	{
+		top: 0px;
+	}
 	.logo {
 
 		height: 100px;
@@ -79,7 +85,7 @@ header
 		width: 200px;
 		@include mobileGrand
 		{
-			width: 100px;
+			width: 20%;
 		}
 
         a {
@@ -113,6 +119,11 @@ header
 	    top: calc(50% - 16px/2);
 	    left: 0;
 	    z-index: 102;
+	    @include mobileGrand
+		{
+			top: 10px;
+			width: 30px;
+		}
 	    &.active span {
 	        &:nth-child(1) {
 	            top: 18px;
@@ -258,7 +269,8 @@ header
 		}
 		@include mobileGrand
 		{
-			display: none;
+			zoom: 0.4;
+			top: 25px;
 		}
         li 
         {
@@ -355,7 +367,14 @@ header
 }
 #content article
 {
-	p,h4
+	&.product.type-product
+	{
+		p
+		{
+			display: none;
+		}
+	}
+	h4
 	{
 		display: none;
 	}
@@ -365,7 +384,8 @@ header
     color: #000;
 }
 .woocommerce div.product p.price, .woocommerce div.product span.price,
-.woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs
+.woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs,
+legend
 {
 	font-size: 20px;
 	color: #fff;
@@ -448,11 +468,34 @@ section
 /*HOME*/
 .carousel-control
 {
-	display: none;
+	&.left
+	{
+		background: transparent url("../images/prev.png") no-repeat 20% center;
+		@include mobileGrand
+		{
+			background-size: 20px;
+		}
+	}
+	&.right
+	{
+		background: transparent url("../images/next.png") no-repeat 80% center;
+		@include mobileGrand
+		{
+			background-size: 20px;
+		}
+	}
+	.glyphicon
+	{
+		visibility: hidden;
+	}
 }
 .carousel-indicators
 {
 	bottom: 40px;
+	@include mobileGrand
+	{
+		bottom: -15px;
+	}	
 
 	li
 	{
@@ -487,6 +530,10 @@ section
 			background: #1C1C1C;
 			z-index: 1;
 			padding: 0 10px 0 0;
+			@include mobileGrand
+			{
+				font-size: 18px;
+			}
 		}
 		.line
 		{
@@ -526,7 +573,10 @@ section
 				overflow: hidden;
 				position: relative;
 				height: 100%;
-				float: left;
+				@include mobileGrand
+				{
+					float: none;
+				}
 				img
 				{
 					width: 100%;
@@ -556,28 +606,12 @@ section
 			{
 				font-size: 22px;
 				margin-top: 15px;
+				margin-top: 0px;
+				@include mobileGrand
+				{
+					font-size: 16px;
+				}
 			}
-		}
-	}
-	.section-destacados
-	{
-		left: 50px;
-		text-align: left;
-		h2,h3
-		{
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: 35px;
-			font-family: 'Raleway-Bold';
-			padding: 0 0 7px;
-			border-bottom: 5px solid #F8931F;
-			
-		}
-		h3
-		{
-			font-size: 40px;
-			margin-top: 0;
-			border-bottom: 0px;
 		}
 	}
 	.block-testimonio
@@ -603,11 +637,21 @@ section
 					padding: 0 0 2px;
 					margin-top: 0px;
 					border-bottom: 5px solid #F8931F;
+					@include mobileGrand
+					{
+						margin-top: 30px;
+						font-size: 18px;
+					}
 				}
 				p
 				{
 					background: url('../images/testimonios_decor.png') no-repeat left top;
-					padding: 15px 0 15px 65px	
+					padding: 15px 0 15px 65px;
+					@include mobileGrand
+					{
+						background: none;
+						padding: 15px 0 15px 0px;
+					}	
 				}
 			}
 		}
@@ -615,14 +659,54 @@ section
 	
 
 }	
+.section-destacados
+{
+	left: 50px;
+	text-align: left;
+	h2,h3
+	{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 35px;
+		font-family: 'Raleway-Bold';
+		padding: 0 0 7px;
+		border-bottom: 5px solid #F8931F;
+		@include mobileGrand
+		{
+			font-size: 18px;
+		}
+		
+	}
+	h3
+	{
+		font-size: 40px;
+		margin-top: 0;
+		border-bottom: 0px;
+		@include mobileGrand
+		{
+			font-size: 14px;
+		}
+	}
+}
 /*HOME*/
 .block-foot
 {
 	padding-bottom: 0px !important;
+	h3
+	{
+		@include mobileGrand
+		{
+			font-size: 18px;
+		}
+	}
 	.block
 	{
 		padding: 15px 0;
 		margin-bottom: -45px;
+		@include mobileGrand
+		{
+			margin-bottom: 0px;
+		}
 	}
 	.block-4
 	{
@@ -633,11 +717,21 @@ section
 			width: 100%;
 			margin: 0 0 0 5%;
 			max-width: 340px;
+			@include mobileGrand
+			{
+				font-size: 12px;
+			}
 		}
 	}
 }
 .redes-principales
 {
+	@include mobileGrand
+	{
+		width: 200px;
+    	margin: 0 auto;
+    	text-align: center;
+	}
 	img
 	{
 		width: 70px;
@@ -646,6 +740,11 @@ section
 	{
 		font-size: 25px;
     	font-family: 'Raleway-Bold';
+    	@include mobileGrand
+		{
+			font-size: 14px;
+			margin-top: 20px;
+		}
 	}
 }
 .redes-comunicacion
@@ -657,13 +756,30 @@ section
 	img
 	{
 		width: 100px;
+		@include mobileGrand
+		{
+			width: 50px;
+		}
 	}
 	.whatsapp-web,
-	.messenger-web
+	.messenger-web,
+	.whatsapp-movil
 	{
 		float: right;
 		margin-top: -50px;
 		margin: -50px 10px 0;
+		@include mobileGrand
+		{
+			margin-top: -50px;
+		}
+	}
+	.whatsapp-movil
+	{
+		@include mobileGrand
+		{
+			float: right;
+			margin: -50px 70px 0;
+		}
 	}
 }
 /*PLANES*/
@@ -681,12 +797,20 @@ section
 				font-size: 42px;
 				font-family: 'Raleway-Bold';
 				border-bottom: 3px solid #F8931F;
+				@include mobileGrand
+				{
+					font-size: 18px;
+				}
 			}
 			p
 			{
 				width: 85%;
 				margin: 10px auto 40px;
 				font-size: 30px;
+				@include mobileGrand
+				{
+					font-size: 16px;
+				}
 			}
 		}		
 	}
@@ -700,7 +824,6 @@ section
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-2
 {
-	float: none;
 	margin:0 auto; 
 	height: 100vh;
 }
@@ -716,6 +839,7 @@ section
 	font-family: 'Raleway-Bold';
 	border-bottom: 3px solid #F8931F;
 
+
 }
 .woocommerce form.login, .woocommerce form.register
 {
@@ -728,7 +852,8 @@ section
 {
 	font-size: 20px;
 }
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt
 {
 	background-color:#F8931F;
 	color:black;
@@ -740,10 +865,37 @@ section
 	border: 0px solid #000000;
 	width:auto;
 	height: 65px;
-	display: block;
+	float: left;
+	width: 100%;
 	font-family: 'Raleway-Bold';
 	margin: 30px auto 0;
 	z-index: 1;
+	text-decoration: none;
+}
+.woocommerce ul.products li.product a
+{
+	width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+.woocommerce-privacy-policy-text p,
+.wc_payment_method.payment_method_paypal label,
+.wc_payment_method.payment_method_bacs label,
+.select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option[data-selected=true],
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected],
+.select2-results__option[aria-selected], .select2-results__option[data-selected]
+{
+	color: #000;
+}
+.product-name a,
+.posted_in a
+{
+	color: #F8931F;
+}
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text
+{
+	width: 150px
 }
 .woocommerce-LostPassword.lost_password
 {
@@ -801,11 +953,19 @@ section
 			font-family: 'Raleway-Bold';
 			border-bottom: 3px solid #F8931F;
 			margin-top: 0px;
+			@include mobileGrand
+			{
+				font-size: 18px;
+			}
 		}
 		p
 		{
 			margin: 20px 0;
 			font-size: 16px;
+			@include mobileGrand
+			{
+				font-size: 14px;
+			}
 		}
 		a
 		{
@@ -834,9 +994,17 @@ section
 	left: 50px;
 	text-align: left;
 	padding: 0 0%;
+	@include mobileGrand
+	{
+		left: 0;
+	}
 	&.right
 	{
 		text-align: right;
+		@include mobileGrand
+		{
+			text-align: left;
+		}
 	}
 	h2,h3
 	{
@@ -846,6 +1014,10 @@ section
 		font-family: 'Raleway-Bold';
 		padding: 0 0 7px;
 		border-bottom: 5px solid #F8931F;
+		@include mobileGrand
+		{
+			font-size: 18px;
+		}
 		
 	}
 	h3
@@ -854,17 +1026,28 @@ section
 		margin-top: 0;
 		border-bottom: 0px;
 		font-family: 'Raleway-Medium';
+		@include mobileGrand
+		{
+			font-size: 16px;
+		}
 	}
 }
 .row-start
 {
-	.rate {
-	  display: inline-block;
-	  margin: 0;
-	  padding: 0;
-	  border: none;
-	  text-align: center;
-	  width: 100%;
+	.rate 
+	{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		border: none;
+		text-align: center;
+		width: 100%;
+		@include mobileGrand
+		{
+			width: 192px;
+			display: block;
+			margin: 0 auto;
+		}
 	}
 
 	input {

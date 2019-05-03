@@ -22,7 +22,7 @@
 <div class="row redes-comunicacion">
     <div class="wp">
       <a class="whatsapp-movil" href="whatsapp://send/?phone=573125225009&text=">
-        <img src="https://depura-creatividad.com/iparlab2/wp-content/uploads/2019/04/wp-iparlab.png" alt="whatsapp" >
+        <img src="<?php echo get_template_directory_uri(); ?>/images/whatsapp.png" alt="whatsapp" >
       </a>
       <a class="messenger-web" href="https://m.me/XYZ"> 
         <img src="<?php echo get_template_directory_uri(); ?>/images/messenger.png" alt="mesenger" >

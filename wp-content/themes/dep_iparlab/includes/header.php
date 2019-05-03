@@ -70,11 +70,12 @@
           <img src="https://depura-creatividad.com/iparlab/wp-content/uploads/2019/02/logo-iparlab-e1550680594358.png" alt="">
         </a>
       </div>
+      <!-- pueden comentar este menu cuando quieran -->
       <ul class="lateral_menu">
-          <li class=""><a href="javascript:void(0);">Tutoriales </a></li>
-          <li class=""><a href="javascript:void(0);">Entrevistas</a></li>
-          <li class=""><a href="javascript:void(0);">Destacados</a></li>
-        </ul>
+        <li class=""><a href="javascript:void(0);"><img src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" alt=""></a></li>
+        <li class=""><a href="javascript:void(0);">DAVID</a></li>
+      </ul>
+      <!-- pueden comentar este menu cuando quieran -->
   </div>
 </header>
 

@@ -32,7 +32,7 @@ $slider_videos = get_field('slider_videos');
       ?>
         <div class="item <?php echo $class; ?>">
         <img src="<?php echo $imagen; ?>" alt="">
-        <div class="carousel-caption">
+        <div class="carousel-caption section-destacados">
           <h2><?php echo $texto; ?></h2>
         </div>
       </div>
