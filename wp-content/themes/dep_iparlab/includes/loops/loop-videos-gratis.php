@@ -20,7 +20,7 @@ $args = array (
 $query = new WP_Query($args);
 
 ?>
-<section id="tipo-contenido" class="videos">
+<section id="tipo-contenido" class="videos section_col_4">
   <?php
 
   if($query->have_posts()):
@@ -34,12 +34,18 @@ $query = new WP_Query($args);
 
   ?>
 
-  <article class="video-block">
-     <?php the_post_thumbnail();?><!-- poner filtro de play como estan en el home-->
-   <!--<?php
-    echo do_shortcode('[vdo id="' . $id_video . '"]'); ?>  Este es el codigo para traer el video de vdochiper-->
-      <h2><a href="<?php the_permalink() ?>"><?php the_title();?></a></h2>
-  </article>
+  <div class="row block-gratis col-lg-3 col-md-6 col-xs-12">
+    <article class="videos-block block-gratis-item ">
+      <a href="<?php the_permalink() ?>">
+        <div class="hover-video"></div>
+        <?php the_post_thumbnail();?>
+        <!-- poner filtro de play como estan en el home-->
+        <!--<?php
+         echo do_shortcode('[vdo id="' . $id_video . '"]'); ?>  Este es el codigo para traer el video de vdochiper-->
+      </a>
+      <h3><?php the_title();?></h3>
+    </article>
+  </div>
 
   <?php endwhile;?>
 </section>

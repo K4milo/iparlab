@@ -24,9 +24,10 @@ $testimonios = get_field('testimonios');
           $testimonio = get_sub_field('testimonio');
         ?>
         <div class="block-testimonio-item col-lg-6 col-md-6 col-xs-12">
-          <div class="block-testimonio-img col-lg-6 col-md-6 col-xs-12 nopadding">
+          <a data-fancybox href="https://www.youtube.com/watch?v=q8ZzKsDbg3k" class="block-testimonio-img col-lg-6 col-md-6 col-xs-12 nopadding">
+            <div class="hover-video"></div>
             <img src="<?php echo $imagen; ?>" alt="">
-          </div>
+          </a>
           <div class="block-testimonio-content col-lg-6 col-md-6 col-xs-12 nopadding">
             <h2><?php echo $titulo; ?></h2>
             <p><?php echo $testimonio; ?></p>

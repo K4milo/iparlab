@@ -27,7 +27,7 @@ $equipo = get_field('equipo');
             <h2><?php echo $nombre; ?></h2>
             <h3>Perfil/Cargo</h3>
             <p><?php echo $descripcion; ?></p>
-            <a href="#">ver video</a>
+            <a data-fancybox href="https://www.youtube.com/watch?v=q8ZzKsDbg3k&">ver video</a>
           </div>
         </div> 
         
@@ -36,4 +36,5 @@ $equipo = get_field('equipo');
         endif;
       ?>
     </div>
+    
 </section>

@@ -27,6 +27,30 @@ body.page-template-_videos-tpl
 		padding-top: 0 !important;
 	}
 }
+address
+{
+	text-align: left;
+}
+.fancybox-content
+{
+	background: transparent !important;
+	max-width: 90% !important;
+	max-height: 90% !important;
+	@include mobileGrand
+	{
+		max-width: 100% !important;
+		max-height: 100% !important;
+	}
+
+}
+.carousel-caption
+{
+	padding-bottom: 50px;
+	@include mobileGrand
+	{
+		padding-bottom: 30px;
+	}
+}
 .container-fluid
 {
 	padding-top: 100px !important;
@@ -260,7 +284,7 @@ header
 		margin: 0;
 		padding: 0;
 		right: 0;
-		top: 20px;
+		top: 0px;
 		width: 45%;
 		text-align: right;
 		@include desktopSmall
@@ -287,16 +311,25 @@ header
             {
 				padding: 10px 10px;
 				height: 100%;
-				font-size: 25px;
+				font-size: 20px;
 				line-height: 25px;
 				text-decoration: none;
 				color: #fff;
 				display: table;
 				font-family: 'Raleway-Bold';
+				h2
+				{
+					font-size: 20px;
+					@include desktopSmall
+					{
+						font-size: 20px;
+					}
+				}
 				@include desktopSmall
 				{
 					font-size: 20px;
-				}	
+				}
+					
 				&:hover
 				{
 					text-decoration: none;
@@ -304,7 +337,7 @@ header
 				}
             }
         }
-	    }
+	}
 }
 
 
@@ -375,7 +408,7 @@ header
 			display: none;
 		}
 	}
-	h4
+	h4,.text-muted
 	{
 		display: none;
 	}
@@ -402,6 +435,10 @@ legend
 .nopadding
 {
 	padding: 0;
+}
+.nomargin
+{
+	margin: 0;
 }
 .clear2
 {
@@ -520,6 +557,14 @@ section
 .section_col_4,
 .video-free
 {
+	.video_slider
+	{
+		div
+		{
+			width: 100% !important;
+			margin: 0 0 !important;
+		}
+	}
 	.block-titulo
 	{
 		overflow: hidden;
@@ -550,7 +595,8 @@ section
 
 		}
 	}
-	.block-gratis
+	.block-gratis,
+	.block-testimonio
 	{	
 		a.bloque_link
 		{
@@ -571,13 +617,15 @@ section
 			text-align: center;
 			line-height: 95px;
 		}
-		.block-gratis-item
+		.block-gratis-item,
+		.block-testimonio-item 
 		{
 			a
 			{
 				overflow: hidden;
 				position: relative;
 				height: 100%;
+				display: block;
 				@include mobileGrand
 				{
 					float: none;
@@ -585,6 +633,7 @@ section
 				img
 				{
 					width: 100%;
+					height: auto;
 					box-shadow: 0px 5px 10px #131313;
 				}
 				.hover-video
@@ -880,10 +929,27 @@ section
 	margin: 30px auto 0;
 	z-index: 1;
 	text-decoration: none;
+	padding: 0 !important;
+	line-height: 65px;
+
 	@include mobileGrand
 	{
 		zoom: 0.7;
 	}
+}
+.shipping-calculator-button,
+.woocommerce-account .addresses .title .edit,
+.woocommerce table.shop_table td a
+{
+	color: #F8931F;
+}
+.woocommerce table.my_account_orders .button,
+.woocommerce-page .woocommerce-info .button
+{
+	color: #000;
+	text-align: center;
+	zoom: 0.7;
+	
 }
 .woocommerce ul.products li.product a
 {
@@ -951,6 +1017,17 @@ section
 		margin:0 auto;
 		float: none;
 		overflow: hidden;
+		&:nth-child(2n)
+		{
+			.block-equipo-img
+			{
+				float: right;
+				@include mobileGrand
+				{
+					float: left;
+				}
+			}
+		}	
 	}
 	.block-equipo-img
 	{

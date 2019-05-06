@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/favicon.png" />
 	<?php wp_head(); ?>
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/styles/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

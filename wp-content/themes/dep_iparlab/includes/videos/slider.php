@@ -31,11 +31,16 @@ $slider_videos = get_field('slider_videos');
                     else $class = '';
       ?>
         <div class="item <?php echo $class; ?>">
-        <img src="<?php echo $imagen; ?>" alt="">
-        <div class="carousel-caption section-destacados">
-          <h2><?php echo $texto; ?></h2>
+          <img src="<?php echo $imagen; ?>" alt="" width="100%" height="auto">
+          <div class="carousel-caption section-destacados">
+            <!-- <h2><?php //echo $texto;?></h2> -->
+            <h2>
+              este mes
+            </h2>
+            <br>
+            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+          </div>
         </div>
-      </div>
       <?php
         endwhile;
       endif;
