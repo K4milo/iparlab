@@ -878,8 +878,8 @@ section
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-2
 {
-	margin:0 auto; 
-	height: 100vh;
+	margin:0 auto;  
+	height: auto;
 }
 .woocommerce .col2-set, .woocommerce-page .col2-set
 {
@@ -896,8 +896,6 @@ section
 	{
 		font-size: 35px;
 	}
-
-
 }
 .woocommerce form.login, .woocommerce form.register
 {

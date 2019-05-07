@@ -1075,7 +1075,7 @@ section.row {
 .woocommerce .col2-set .col-1,
 .woocommerce-page .col2-set .col-2 {
   margin: 0 auto;
-  height: 100vh;
+  height: auto;
 }
 
 .woocommerce .col2-set,
